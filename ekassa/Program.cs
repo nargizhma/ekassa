@@ -14,7 +14,7 @@ namespace ekassa
 
             while (true)
             {
-                Console.WriteLine("\n=== ƏSAS MENYU ===");
+                Console.WriteLine("\nƏSAS MENYU");
                 Console.WriteLine("1. E-Kassa yarat");
                 Console.WriteLine("2. E-Kassaya bağlı hesab yarat");
                 Console.WriteLine("3. E-kassaya bağlı bütün hesabları göstər");
@@ -60,7 +60,7 @@ namespace ekassa
         {
             while (true)
             {
-                Console.WriteLine("\n--- Yeni hesab yarat ---");
+                Console.WriteLine("\nYeni hesab yarat");
                 Console.Write("Açıqlama (məs: Maaş hesabı): ");
                 string description = Console.ReadLine() ?? "";
 
@@ -111,7 +111,7 @@ namespace ekassa
 
             while (true)
             {
-                Console.WriteLine("\n=== HESAB ===");
+                Console.WriteLine("\nHESAB");
                 PrintSingleAccount(acc);
 
                 Console.WriteLine("a) Hesaba pul yatır");
@@ -167,7 +167,7 @@ namespace ekassa
 
         private static void ShowTransactions(Account acc)
         {
-            Console.WriteLine("\n--- Hərəkətlər ---");
+            Console.WriteLine("\nHərəkətlər");
             if (acc.Transactions.Count == 0)
             {
                 Console.WriteLine("(Hərəkət yoxdur)");
